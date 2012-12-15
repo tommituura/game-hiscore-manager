@@ -2,8 +2,6 @@
 
 A rest api for web browser development project. 
 
-Saves the scores. 
-
 Done in php, uses [Slim](http://www.slimframework.com/) rest framework.
 
 Names of games and players can be only 50 characters long at most. 
