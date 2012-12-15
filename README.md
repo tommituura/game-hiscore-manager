@@ -19,8 +19,7 @@ First, get the stuff from here: http://www.slimframework.com/install or
 from github: https://github.com/codeguy/Slim .
 
 Then put the 'Slim' directory into the same directory as index.php. It should work then
-"just like that". Remember to set file access rights correctly for php files and create the 
-db.ini too (look below).
+"just like that". Remember to set file access rights correctly for .htaccess and php files.
 
 ### Database connection: 
 
