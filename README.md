@@ -6,11 +6,21 @@ Saves the scores.
 
 Done in php, uses [Slim](http://www.slimframework.com/) rest framework.
 
-Names of games and players can be only 50 characters long at most. Game scores must be positive integers.
+Names of games and players can be only 50 characters long at most. 
+Game scores must be positive integers.
 
 ### License
 
 MIT
+
+### Installing Slim framework:
+
+First, get the stuff from here: http://www.slimframework.com/install or 
+from github: https://github.com/codeguy/Slim .
+
+Then put the 'Slim' directory into the same directory as index.php. It should work then
+"just like that". Remember to set file access rights correctly for php files and create the 
+db.ini too (look below).
 
 ### Database connection: 
 
