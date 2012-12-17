@@ -1,8 +1,10 @@
 # game-hiscore-manager
 
-A rest api for web browser development project. 
+A rest api and management ui for web browser development project highscore backend. 
 
-Done in php, uses [Slim](http://www.slimframework.com/) rest framework.
+Backend done in php, uses [Slim](http://www.slimframework.com/) rest framework.
+
+Frontend done in js, uses Backbone + Bootstrap + Mustache frameworks... 'The usual'.
 
 Names of games and players can be only 50 characters long at most. 
 Game scores must be positive integers.
@@ -17,7 +19,7 @@ First, get the stuff from here: http://www.slimframework.com/install or
 from github: https://github.com/codeguy/Slim .
 
 Then put the 'Slim' directory into the same directory as index.php. It should work then
-"just like that". Remember to set file access rights correctly for .htaccess and php files.
+"just like that". Remember to set file access rights correctly for .htaccess, php, html, js and css files.
 
 ### Database connection: 
 
