@@ -33,7 +33,7 @@ gamemanager.views.AddView = Backbone.View.extend({
     }
 });
 
-gamemanager.views.NavigationView = Backbone.View.extend({
+gamemanager.views.MenuView = Backbone.View.extend({
     el: $('#menu'),
     events: {
         "click #addgame": "add",
