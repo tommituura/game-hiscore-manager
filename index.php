@@ -6,7 +6,8 @@ require 'Slim/Slim.php';
 $app = new \Slim\Slim();
 
 $app->get('/', function() {
-	echo '["Hello", "World!"]';
+	include('frontpage.html');
+	// echo '["Hello", "World!"]';
 });
 
 $app->get('/hello/:name', function($name){

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href='http://fonts.googleapis.com/css?family=Quantico:700italic' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container fill">
+            <!-- runko -->
+            <div class="row">
+                <div class="span12">
+                    <h1 class="trueheader">GAME MANAGER 2012</h1>
+                </div>
+            </div>
+            <div class="row"><div class="span12">&nbsp;</div></div>
+            <div class="row"><div class="span12">&nbsp;</div></div>
+            <div class="row"><div class="span12">&nbsp;</div></div>
+            <div class="row menurow">
+                <div class="span2"></div>
+                <div class="span10">
+                    <ol id="menu">
+                        <li id="addgame"><a class="btn" href="#/add">Add game</a></li>
+                        <li id="listgames"><a class="btn" href="#/list">List games</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span1"></div>
+                <div id="dataarea" class="span11"></div>
+                
+            </div>
+        </div>
+
+        <!-- templatet -->
+        <script id="gameaddtemplate" type="text/template">
+            <div class="row">
+                <div class="span1"></div>
+                <div id="game-add-div" class="span10">
+                    <h3>Add game</h3>
+                    <form class="form-inline">
+                            <input id="add-name" type="text" placeholder="Name"/></input> 
+                            <button id="add-submit" class="btn btn-primary" type="submit">Add</button>
+                    </form>
+                </div>
+            </div>
+        </script>
+        <script id="gamelisttemplate" type="text/template">
+            <div class="row">
+                <div class="span1"></div>
+                <div id="gamelist" class="span10">
+                    <h3>List games</h3>
+                    <div class="row gamelistheading">
+                        <div class="span1">
+                            <p>Id</p>
+                        </div>
+                        <div class="span1">
+                            <p>Name</p>
+                        </div>
+                    </div>
+                    {{#gamelist}}
+                    <div class="row gamelistitem">
+                        <div class="span1 gameid">
+                            <p>{{id}}</p>
+                        </div>
+                        <div class="span9 gamename">
+                            <p>{{name}}</p>
+                        </div>
+                    </div>
+                    {{/gamelist}}
+                </div>
+            </div>
+        </script>
+        
+        <!-- JavaScript-kirjastot -->
+        <script src="lib/js/jquery-1.8.2.min.js"></script>
+        <script src="lib/js/mustache.js"></script>
+
+        <script src="lib/js/underscore-min.js"></script>
+        <script src="lib/js/backbone-min.js"></script>
+
+        <script src="lib/js/bootstrap.min.js"></script>        
+        
+        <!-- Omat koodit -->
+        
+        <script type="text/javascript">var gamemanager = {};</script>
+        <script src="bbmodels.js"></script>
+        <script src="bbviews.js"></script>
+
+        <script src="code.js"></script>
+    </body>
+</html>

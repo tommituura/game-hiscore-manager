@@ -1,0 +1,38 @@
+body {
+    background-color: #000;
+}
+html, body {
+    height: 100%;
+}
+h1.trueheader {
+    font-family: "Quantico", sans-serif;
+    font-size: 6em;
+    font-style: italic;
+    text-shadow: #f00 1px 1px, 
+                 #f00 2px 2px,
+                 #f00 3px 3px, 
+                 #0ff 4px 4px,
+                 #0ff 5px 5px, 
+                 #ccc 6px 6px, 
+                 #ccc 7px 7px, 
+                 #ccc 8px 8px;
+}
+
+.container {
+    background-color: #fff;
+}
+
+.fill {
+    min-height: 100%;
+}
+
+ol#menu{
+    list-style-type: none;
+}
+ol#menu > li {
+    display: inline-block;
+}
+
+.gamelistheading p {
+    font-weight: bold;
+}
