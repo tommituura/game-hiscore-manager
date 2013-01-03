@@ -5,15 +5,22 @@ require 'Slim/Slim.php';
 
 $app = new \Slim\Slim();
 
+require_once 'db.php';
+
 $app->get('/', function() {
 	include('frontpage.html');
-	// echo '["Hello", "World!"]';
 });
 
-$app->get('/hello/:name', function($name){
-	echo "Hello, $name";
+$app->get('/games/', function(){
+	echo list_games();
 });
 
+$app->post('/games/', function() {
+    global $app;
+    $req = $app->request();
+    $paramsBody = json_decode($req->getBody());
+    echo add_game($paramsBody->name);
+});
 
 
 $app->run();

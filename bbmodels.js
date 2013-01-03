@@ -10,6 +10,6 @@ gamemanager.models.Game = Backbone.Model.extend({
     }
 });
 gamemanager.collections.GameCollection = Backbone.Collection.extend({
-    url: "http://this-here-should-be-rest-api-url",
+    url: "http://ttuura.users.cs.helsinki.fi/game-hiscore-manager/games/",
     model: gamemanager.models.Game
 });
