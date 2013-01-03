@@ -4,7 +4,7 @@ CREATE SEQUENCE gamemanager.game_id_seq;
 
 CREATE TABLE gamemanager.game (
     id INTEGER PRIMARY KEY DEFAULT nextval('gamemanager.game_id_seq'),
-    name VARCHAR(50)
+    name VARCHAR(50) NOT NULL UNIQUE
 );
 
 CREATE SEQUENCE gamemanager.score_id_seq;
