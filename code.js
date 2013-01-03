@@ -2,5 +2,6 @@
 
 $(document).ready(function() {
     gamemanager.collections.coll = new gamemanager.collections.GameCollection;
-    new gamemanager.views.NavigationView();
+    new gamemanager.views.MenuView();
 });
+
